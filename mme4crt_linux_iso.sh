@@ -87,6 +87,3 @@ echo "$STR"
 
 echo -e "\033[32mRunning MME4CRT_v2.0\033[0m"
 echo "$STR"
-sleep 1
-
-retroarch
