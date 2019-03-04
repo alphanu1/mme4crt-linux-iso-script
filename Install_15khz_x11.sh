@@ -37,9 +37,13 @@ else
 fi
 }
 
-echo -e "\033[32mPlease select your video card make. $STR1. ATI $STR2. Intel $STR3. Nvidia $STR\033[0m"
-echo -e "\033[32mChoose between 1, 2 or 3 followed by [ENTER]\033[0m"
+echo -e "\033[32mPlease select your video card make.\033[0m"
 echo "$STR"
+echo -e "\033[32m1. ATI\033[0m"
+echo -e "\033[32m2. INTEL\033[0m"
+echo -e "\033[32m3. NVIDIA\033[0m"
+echo "$STR"
+echo -e "\033[32mChoose between 1, 2 or 3 followed by [ENTER]\033[0m"
 
 read res_selection
 echo "$STR"
@@ -58,7 +62,6 @@ xrandr | grep " connected" |  awk '{print$1}'
 
 echo "$STR"
 echo -e "\033[32mPlease type the connected output you wish to use for 15khz followed by [ENTER]\033[0m"
-echo "$STR"
 read output
 echo
 
