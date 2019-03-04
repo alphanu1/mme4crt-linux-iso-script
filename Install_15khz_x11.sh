@@ -50,7 +50,6 @@ echo "$STR"
 
 check_res
 
-echo -e "\033[32m$choosen_res $mode\033[0m"
 echo "$STR"
 
 NC="\033[0m"
